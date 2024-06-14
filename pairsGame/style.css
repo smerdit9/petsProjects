@@ -1,0 +1,200 @@
+.flex {
+    display: flex;
+}
+
+.posAbsolute {
+    position: absolute;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(img/background.jpg);
+}
+
+.img {
+    width: 250px;
+    height: 250px;
+    z-index: -1;
+}
+
+.comet {
+    right: 5%;
+}
+
+.background-comet {
+    background-image: url(img/comet.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #fff !important;
+}
+
+.saturn {
+    top: 25%;
+    left: 15%;
+    width: 300px;
+    height: 300px;
+}
+
+.background-saturn {
+    background-image: url(img/saturn.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #fff !important;
+}
+
+.astronaut {
+    left: 3%;
+    top: 3%;
+}
+
+.background-astronaut {
+    background-image: url(img/astronaut.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #fff !important;
+}
+
+.earth {
+    right: 20%;
+    top: 45%;
+    width: 200px;
+    height: 200px;
+}
+
+.background-earth {
+    background-image: url(img/earth.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #fff !important;
+}
+
+.rocket {
+    bottom: 6%;
+    left: 3%;
+}
+
+.background-rocket {
+    background-image: url(img/rocket.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #fff !important;
+}
+
+.satellite {
+    transform: scale(-1, 1);
+    right: 3%;
+    bottom: 6%;
+    width: 200px;
+    height: 200px;
+}
+
+.background-satellite {
+    background-image: url(img/satellite.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #fff !important;
+}
+
+.stars {
+    bottom: 0;
+    left: 30%;
+}
+
+.background-stars {
+    background-image: url(img/stars.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #fff !important;
+}
+
+.alien {
+    right: 33%;
+    bottom: 1%;
+    width: 160px;
+    height: 215px;
+}
+
+.background-alien {
+    background-image: url(img/alien.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #fff !important;
+}
+
+.title {
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    margin: 30px auto;
+    width: 330px;
+    color: #fff;
+    -webkit-text-stroke: 2px #ff000050;
+}
+
+.list-wrapper{
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.list {
+    margin: 0 auto;
+    padding: 0;
+    width: 615px;
+    height: 615px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.list-item {
+    width: 150px;
+    height: 150px;
+    background-color: #4865a8;
+    list-style: none;
+    border-radius: 5px;
+}
+
+.list-item:nth-child(4n) {
+    margin-bottom: 5px;
+}
+
+.list-item:last-child {
+    margin: 0;
+}
+
+.list-item:hover {
+    background-color: #9a51b0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.button {
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    height: 60px;
+    width: 170px;
+    display: block;
+    margin: 0 auto;
+    background-color: #9239ad;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+}
+
+.button:hover {
+    background-color: #822d9c;
+}
