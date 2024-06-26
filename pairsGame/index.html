@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC:wght@700&display=swap" rel="stylesheet">
-  <link type="image/x-icon" href="img/carts.png" rel="shortcut icon">
+  <link type="image/x-icon" href="img/cards.png" rel="shortcut icon">
   <link rel="stylesheet" href="style.css">
   <script defer src="main.js"></script>
 </head>
@@ -22,10 +22,11 @@
     <img class="img satellite posAbsolute " src="img/satellite.png" alt="Спутник">
     <img class="img stars posAbsolute " src="img/stars.png" alt="Звезды">
     <img class="img alien posAbsolute " src="img/alien.png" alt="Инопланетянин">
-    <h1 class="title">Игра в пары</h1>
-    <div class="list-wrapper flex">
+    <h1 class="title">Игра в пары <span id="counter" class="time"></span></h1>
+    
+    <div class="game" id="game">
     </div>
-    <a href="index.html"><button class="button">Начать заново!</button></a>
+    <button class="button" id="btn">Сыграть еще раз!</button>
   </div>
 </body>
 </html>
