@@ -1,0 +1,15 @@
+
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.result {
+    margin: 0 auto;
+    width: 200px;
+    font-size: 50px;
+}

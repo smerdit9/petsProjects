@@ -1,0 +1,47 @@
+p {
+    margin: 0;
+    margin-right: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.btn-margin {
+    margin-left: auto;
+}
+
+.list-group {
+    margin-bottom: 50px;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-light {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    line-height: 0;
+}
+
+.error {
+    display: none;
+    color: #e8463a;
+    font-size: 0.87rem;
+}
+
+.filtration {
+    padding: 10px;
+    border: solid 1px #152e45;
+    border-radius: 10px 10px 0 0;
+}

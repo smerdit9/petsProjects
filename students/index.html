@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Список студентов</title>
+
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Учет студентов</h1>
+        <form class="form" id="form" name="form">
+            <h3>Форма добавления студента</h3>
+            <div class="input-group">
+                <span class="input-group-text">Ф.И.О.</span>
+                <input class="form-control" type="text"  id="surname" placeholder="Фамилия">
+                <input class="form-control" type="text"  id="name" placeholder="Имя">
+                <input class="form-control" type="text"  id="middleName" placeholder="Отчество">
+            </div>
+            <p class="error" id="nameError">Введите полное имя!</p>
+            <div class="mb-3">
+                <label for="birthday" class="form-label">Дата рождения</label>
+                <input type="date" class="form-control" id="birthday">
+                <p class="error" id="dateError">Введите дату рождения!</p>
+                <p class="error" id="dateErrorRange">Дата должна быть в диапазоне от 01.01.1900 до настоящего времени!</p>
+            </div>
+            <div class="mb-3">
+                <label for="startStudyYear" class="form-label">Дата начала обучения</label>
+                <input type="date" class="form-control" id="startStudyYear">
+                <p class="error" id="startYearError">Введите дату начала обучения!</p>
+                <p class="error" id="startYearErrorRange">Дата должна быть в диапазоне от 01.01.2000 до настоящего времени!</p>
+            </div>
+            <div class="mb-3">
+                <label for="facultyInput" class="form-label">Факультет</label>
+                <input type="text" class="form-control" id="facultyInput">
+                <p class="error" id="facultyError">Введите факультет!</p>
+            </div>
+            <button type="submit" class="btn btn-warning btn-margin">Добавить студента</button>
+        </form>
+        <h3>Список студентов</h3>
+        <div class="filtration">
+            <form class="form" id="form" name="form">
+                <div class="input-group">
+                    <input class="form-control" type="text"  id="filtration-name" placeholder="Поиск по имени">
+                    <input class="form-control" type="text"  id="filtration-faculty" placeholder="Поиск по факультету">
+                    <input class="form-control" type="number"  id="filtration-startStudy" maxlength="4" placeholder="Начало обучения">
+                    <input class="form-control" type="number"  id="filtration-endStudy" maxlength="4" placeholder="Конец обучения">
+                    <button type="button" class="btn btn-warning btn-margin" id="filtration-btn">Поиск</button>
+                </div>
+        </form>
+        </div>
+        <table class="table">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col"><button class="btn btn-dark" id="sort-btn-name">Имя</button></th>
+                <th scope="col"><button class="btn btn-dark" id="sort-btn-birthday">Дата рождения (Возраст)</button></th>
+                <th scope="col"><button class="btn btn-dark" id="sort-btn-studyYears">Годы обучения (Курс)</button></th>
+                <th scope="col"><button class="btn btn-dark" id="sort-btn-faculty">Факультет</button></th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider" id="table"></tbody>
+          </table>
+    </div>
+</body>
+
+</html>

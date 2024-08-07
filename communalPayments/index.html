@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <title>ЖКХ</title>
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="form">
+            <div class="column" id="column">
+                <div class="mb-3">
+                <label for="electricity-day-pre" class="form-label">Ст. Свет/день</label>
+                <input type="number" class="form-control" id="electricity-day-pre" step="0.01">
+                </div>
+
+                <div class="mb-3">
+                <label for="electricity-night-pre" class="form-label">Ст. Свет/ночь</label>
+                <input type="number" class="form-control" id="electricity-night-pre" step="0.01">
+                </div>
+
+                <div class="mb-3">
+                <label for="water-hot-pre" class="form-label">Ст. Горячая вода</label>
+                <input type="number" class="form-control" id="water-hot-pre" step="0.01">
+                </div>
+
+                <div class="mb-3">
+                <label for="water-cold-pre" class="form-label">Ст. Холодная вода</label>
+                <input type="number" class="form-control" id="water-cold-pre" step="0.01">
+                </div>
+            </div>
+            <div class="column" id="column">
+                <div class="mb-3">
+                <label for="electricity-day" class="form-label">Свет/день</label>
+                <input type="number" class="form-control" id="electricity-day" step="0.01">
+                </div>
+
+                <div class="mb-3">
+                <label for="electricity-night" class="form-label">Свет/ночь</label>
+                <input type="number" class="form-control" id="electricity-night" step="0.01">
+                </div>
+
+                <div class="mb-3">
+                <label for="water-hot" class="form-label">Горячая вода</label>
+                <input type="number" class="form-control" id="water-hot" step="0.01">
+                </div>
+
+                <div class="mb-3">
+                <label for="water-cold" class="form-label">Холодная вода</label>
+                <input type="number" class="form-control" id="water-cold" step="0.01">
+                </div>
+
+                <div class="mb-3">
+                <label for="heating" class="form-label">Плата за отопление</label>
+                <input type="number" class="form-control" id="heating" step="0.01">
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="btn">Посчитать</button>
+            </div>   
+        </form>
+        <div class="result" id="result"></div>   
+    </div>
+</body>
+</html>
