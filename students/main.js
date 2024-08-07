@@ -317,12 +317,24 @@ filtrationBtn.addEventListener('click', () => {
         }
     }
 
+    
+
     for (let i = 0; i < studentFiltration.length; ++i) {
         let temp = 0;
         let studentNameLower = (studentFiltration[i].name + studentFiltration[i].surname + studentFiltration[i].middleName).toLowerCase();
         let studentFacultyLower = studentFiltration[i].faculty.toLowerCase();
         let studentStartStudyLower = String(studentFiltration[i].startStudyYear.getFullYear());
         let studentEndStudyLower = String(studentFiltration[i].startStudyYear.getFullYear() + 4);
+
+        const filtrationItemLower = [
+            studentStartStudyLower,
+            studentEndStudyLower,
+        ];
+        
+        const filtrationItem = [
+            filtrationStartStudy,
+            filtrationEndStudy,
+        ];
 
         if (filtrationName.value === '') {
             temp++;
@@ -340,19 +352,13 @@ filtrationBtn.addEventListener('click', () => {
             }
         }
 
-        if (filtrationStartStudy.value === '') {
-            temp++;
-        } else {
-            if (studentStartStudyLower === filtrationStartStudy.value) {
+        for (let i = 0; i < filtrationItem.length; ++i) {
+            if (filtrationItem[i].value === '') {
                 temp++;
-            }
-        }
-
-        if (filtrationEndStudy.value === '') {
-            temp++;
-        } else {
-            if (studentEndStudyLower === filtrationEndStudy.value) {
-                temp++;
+            } else {
+                if (filtrationItemLower[i] === filtrationItem[i].value) {
+                    temp++;
+                }
             }
         }
 
