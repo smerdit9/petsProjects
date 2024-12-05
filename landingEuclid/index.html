@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Евклид</title>
+  <link rel="shortcut icon" href="img/favicon.jpg">
+  <link rel="stylesheet" href="libs/accordion.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container flex">
+      <a class="logo" href="#">
+        <img class="logo__img-mini" src="img/Logo320.jpg" alt="Логотип">
+        <img class="logo__img-medium" src="img/Logo1024.jpg" alt="Логотип">
+        <img class="logo__img" src="img/logo.jpg" alt="Логотип">
+      </a>
+      <div class="nav__wrapper flex">
+        <nav class="header__nav nav">
+          <ul class="nav__list flex">
+            <li>
+              <button aria-label="Закрыть бургер меню" class="close">
+                <img src="img/X.svg" alt="">
+              </button>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">О нас</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Этапы</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Вопросы</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Оставить заявку</a>
+            </li>
+          </ul>
+        </nav>
+        <button aria-label="Бургер меню" class="burger__menu"></button>
+        <button aria-label="Поиск" class="header__search-btn"></button>
+        <div class="header__search flex">
+          <div class="search__wrapper">
+            <input class="header__search-input" type="text" placeholder="Что будем искать?">
+            <button aria-label="Поиск" class="header__search-btn header__search-btn-active"></button>  
+          </div>
+          <button aria-label="Закрыть поиск" class="closed-search">
+            <img src="img/closed_search.svg" alt="closed">
+          </button>
+        </div>  
+      </div>
+    </div>
+  </header>
+  <section class="offer">
+    <div class="container">
+      <div class="swiper">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-one">
+
+            </div>
+            <div class="swiper-slide swiper-slide-two">
+
+            </div>
+            <div class="swiper-slide swiper-slide-three">
+
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="content-wrapper">
+          <h1 class="offer__title">Проектные решения любой сложности</h1>
+          <p class="offer__descr">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
+          <button class="btn offer__btn">Заказать расчёт</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about">
+    <div class="container">
+      <h2 class="title about-title">О нас</h2>
+      <p class="about__descr">Также как перспективное планирование создаёт необходимость включения в производственный
+        план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности
+        и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться
+        от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне
+        зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта
+        предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач.
+        Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению
+        качества экспериментов.
+      </p>
+      <div class="about__wrapper flex">
+        <div class="about__item about__left">
+          <div class="left-block flex">
+            <p class="left-block__descr">Принимая во внимание показатели успешности, перспективное планирование
+              способствует подготовке и реализации новых принципов</p>
+            <button class="btn left-block__btn">Подробнее</button>
+          </div>
+        </div>
+        <div class="left-block-none flex">
+          <p class="left-block__descr">Принимая во внимание показатели успешности, перспективное планирование
+            способствует подготовке и реализации новых принципов</p>
+          <button class="btn left-block__btn">Подробнее</button>
+        </div>
+        <div class="about__item about__right flex">
+          <div class="right-block flex">
+            <img class="right-block__img" src="img/about-right1.jpg" alt="картинка">
+            <img class="right-block__img-medium" src="img/about-right1-medium.jpg" alt="картинка">
+            <img class="right-block__img-mini" src="img/about-right1-mini.jpg" alt="картинка">
+            <div class="right-block__content">
+              <h3 class="right-block__title">Консультация с широким активом</h3>
+              <p class="right-block__descr">А также свежий взгляд на привычные вещи — безусловно открывает новые
+                горизонты для как самодостаточных, так и внешне зависимых концептуальных решений</p>
+            </div>
+          </div>
+          <div class="right-block flex">
+            <img class="right-block__img" src="img/about-right2.jpg" alt="картинка">
+            <img class="right-block__img-medium" src="img/about-right2-medium.jpg" alt="картинка">
+            <img class="right-block__img-mini" src="img/about-right2-mini.jpg" alt="картинка">
+            <div class="right-block__content">
+              <h3 class="right-block__title">В своём стремлении повысить</h3>
+              <p class="right-block__descr">Качество жизни, они забывают, что сплочённость команды профессионалов
+                представляет собой интересный эксперимент проверки прогресса профессионального сообщества</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="work">
+    <div class="container">
+      <h2 class="title work-title">Этапы</h2>
+      <div class="work__wrapper work__wrapper--active flex" data-target="one">
+        <div class="work__content">
+          <h3 class="work-titlle-content">Проводим консультацию</h3>
+          <p class="work__deskr">Влечёт за собой процесс внедрения и модернизации приоритизации разума над эмоциями.
+            В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно
+            рассмотрены соответствующими инстанциями.<br class="br">
+            А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены
+            исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных
+            источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся
+            вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины
+            в целом, однако конкретные выводы, разумеется, призваны к ответу.
+          </p>
+          <div class="work__btns flex">
+            <button class="btn work__btn-first">Подробнее</button>
+            <button class="btn work__btn-second">Договор</button>
+          </div>
+        </div>
+        <div class="work__picture"></div>
+      </div>
+    </div>
+  </section>
+  <section class="questions">
+    <div class="container">
+      <h2 class="title faq-title">Вопросы</h2>
+      <div class="questions-wrapper flex">
+        <div class="questions__block">
+          <h3 class="questions__title">Из чего формируется конечная стоимость проекта?</h3>
+          <p class="questions__block__text">Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу.</p>
+        </div>
+        <div class="questions__block">
+          <h3 class="questions__title">У меня есть свой проект. Можно ли его реализовать?</h3>
+          <p class="questions__block__text">А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентального типа.</p>
+        </div>
+        <div class="questions__block">
+          <h3 class="questions__title">Я выбираю между разными компаниями. Почему вы?</h3>
+          <p class="questions__block__text">Явные признаки победы институционализации набирают популярность среди определённых слоёв населения.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper flex">
+        <div class="footer__content">
+          <a class="footer__logo" href="#">
+            <img class="footer__logo-img" src="img/footer-logo.png" alt="Логотип">
+            <img class="footer__logo-mini" src="img/footer-logo-mini.png" alt="Логотип">
+          </a>
+          <nav class="footer__nav nav">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">О нас</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Проекты</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Отзывы</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Договор оферты</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Договор подряда</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Конфиденциальность</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Партнёрское соглашение</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="social flex">
+            <a aria-label="Сылка на одноклассники" class="social__item ok" href=""></a>
+            <a aria-label="Сылка на вконтакте" class="social__item vk" href=""></a>
+          </div>
+        </div>
+        <form class="footer__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+          <h2 class="title footer-title">Оставить заявку</h2>
+          <input class="input" type="text" name="username" placeholder="Фамилия, имя и отчество*" required>
+          <input class="input" type="email" name="email" placeholder="Email*" required>
+          <textarea class="input form__message" name="comment" placeholder="Сообщение"></textarea>
+          <div class="form-bottom flex">
+            <button class="btn form__btn">Отправить данные</button>
+            <div class="checkbox">
+              <input type="checkbox" name="check" id="check" required>
+              <label for="check">Согласен на обработку данных</label>
+            </div>
+          </div>
+        </form>
+        <p class="footer__text">Высокий уровень вовлечения представителей целевой аудитории является чётким
+          доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить
+          значение модели развития. Таким образом, консультация
+          с широким активом обеспечивает широкому кругу (специалистов) участие
+          в формировании стандартных подходов.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="libs/accordion.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
